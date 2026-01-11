@@ -1,0 +1,195 @@
+.wholesale-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+              url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Wholesale Benefits */
+.wholesale-benefits {
+  padding: 80px 0;
+  background-color: var(--light-grey);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.benefit-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.benefit-text {
+  color: #666;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 80px 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Inquiry Section */
+.inquiry-section {
+  padding: 80px 0;
+  background-color: var(--light-grey);
+}
+
+.inquiry-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.inquiry-info h2 {
+  text-align: left;
+}
+
+.inquiry-info .section-subtitle {
+  text-align: left;
+  margin-left: 0;
+}
+
+.inquiry-details {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: var(--shadow);
+}
+
+.inquiry-details h3 {
+  margin-bottom: 15px;
+  color: var(--primary-black);
+}
+
+.inquiry-details li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.inquiry-details i {
+  color: var(--gold);
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.contact-direct {
+  margin-top: 30px;
+}
+
+.contact-link {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--primary-black);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.contact-link:hover {
+  color: var(--gold);
+}
+
+.contact-link i {
+  margin-right: 10px;
+  color: var(--gold);
+}
+
+.inquiry-form {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group.half {
+  flex: 1;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .inquiry-form {
+    padding: 30px 20px;
+  }
+}

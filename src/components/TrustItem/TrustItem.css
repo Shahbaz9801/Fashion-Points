@@ -1,0 +1,24 @@
+.trust-item {
+  text-align: center;
+  padding: 30px 20px;
+  transition: var(--transition);
+}
+
+.trust-item:hover {
+  transform: translateY(-5px);
+}
+
+.trust-item i {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.trust-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.trust-item p {
+  color: #666;
+}

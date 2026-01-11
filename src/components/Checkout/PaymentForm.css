@@ -1,0 +1,134 @@
+.payment-form {
+  padding: 20px 0;
+}
+
+.payment-method-selector {
+  margin-bottom: 30px;
+}
+
+.payment-option {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.payment-option:hover {
+  border-color: var(--gold-light);
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-option label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary-black);
+  margin: 0;
+}
+
+.payment-option input[type="radio"]:checked + label {
+  color: var(--gold);
+}
+
+.payment-option i {
+  font-size: 1.5rem;
+}
+
+.payment-option input[type="radio"]:checked ~ label {
+  color: var(--primary-black);
+}
+
+.payment-option input[type="radio"]:checked {
+  accent-color: var(--gold);
+}
+
+.card-details-form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-details-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card-details-form .form-group {
+  margin-bottom: 20px;
+}
+
+.card-details-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.card-details-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.card-details-form input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.paypal-note,
+.cod-note {
+  background-color: #f0f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #0066cc;
+  text-align: center;
+}
+
+.payment-security {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2ecc71;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.payment-security i {
+  font-size: 1.2rem;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .card-details-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .payment-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,29 @@
+.business-card {
+  background-color: var(--white);
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.business-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.business-icon {
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.business-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.business-text {
+  color: #666;
+  margin-bottom: 25px;
+}
